@@ -1,0 +1,6 @@
+output/
+packages/
+.paket/paket.exe
+
+Thumbs.db
+Desktop.ini
