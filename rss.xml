@@ -5,21 +5,11 @@
     <description>Wallace Kelly writes about F#, WPF, async, ClickOnce and other software development topics.
 </description>
     <item>
-      <title>Getting Started</title>
-      <guid>http://wallacekelly.github.io//blog/2013/11-09-getting-started</guid>
-      <link>http://wallacekelly.github.io//blog/2013/11-09-getting-started/index.html</link>
-      <pubDate>Sat, 09 Nov 2013 17:38:14 GMT</pubDate>
-      <description>&lt;p&gt;If you've much experience with other static site generators like &lt;em&gt;Octopress&lt;/em&gt; or &lt;em&gt;Jekyll&lt;/em&gt; most of this should be fairly familiar, if not, hopefully it won't be too difficult to pick up.&lt;/p&gt;
-
-
-</description>
-    </item>
-    <item>
-      <title>Hello, FsBlog!</title>
-      <guid>http://wallacekelly.github.io//blog/2013/11-08-hello-fsblog</guid>
-      <link>http://wallacekelly.github.io//blog/2013/11-08-hello-fsblog/index.html</link>
-      <pubDate>Fri, 08 Nov 2013 16:27:31 GMT</pubDate>
-      <description>&lt;p&gt;&lt;strong&gt;FsBlog&lt;/strong&gt; aims to be a blog-aware static site generator, mostly built in &lt;code&gt;F#&lt;/code&gt; for .NET and Mono developers.&lt;/p&gt;
+      <title>Script for adding and removing the ClickOnce .deploy extension</title>
+      <guid>http://wallacekelly.github.io//blog/2015/03-14-script-for-adding-and-removing-the-clickonce-deploy-extension</guid>
+      <link>http://wallacekelly.github.io//blog/2015/03-14-script-for-adding-and-removing-the-clickonce-deploy-extension/index.html</link>
+      <pubDate>Sat, 14 Mar 2015 14:50:12 GMT</pubDate>
+      <description>&lt;p&gt;I was recently debugging a ClickOnce deployment. I needed a way to quickly add and remove the &lt;code&gt;*.deploy&lt;/code&gt; extension from all the files in a deployment folder. Well, not &lt;em&gt;all&lt;/em&gt; the files. The &lt;code&gt;*.manifest&lt;/code&gt; file is treated differently.&lt;/p&gt;
 
 
 </description>
