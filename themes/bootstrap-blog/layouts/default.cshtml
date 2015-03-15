@@ -12,7 +12,7 @@
     <meta name="author" content="">
     <link rel="icon" href="@Model.Root/favicon.png">
 
-    <title>Blog Template for Bootstrap</title>
+    <title>Wallace Kelly</title>
 
     <!-- FSharp.Formatting Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="@Model.Root/fsharp.formatting/tooltips.css" />
@@ -36,7 +36,7 @@
     <div class="blog-masthead">
         <div class="container">
             <nav class="blog-nav">
-                <a class="blog-nav-item active" href="#">Home</a>
+                <a class="blog-nav-item active" href="@Model.Root/">Home</a>
                 <a class="blog-nav-item" href="#">New features</a>
                 <a class="blog-nav-item" href="#">Press</a>
                 <a class="blog-nav-item" href="#">New hires</a>
@@ -48,8 +48,8 @@
     <div class="container">
 
         <div class="blog-header">
-            <h1 class="blog-title">FsBlog</h1>
-            <p class="lead blog-description">Blog aware, static site generation using F#.</p>
+            <h1 class="blog-title">Wallace Kelly</h1>
+            <p class="lead blog-description">writes about F#, WPF, async, and the like.</p>
         </div>
 
         <div class="row">
@@ -65,12 +65,11 @@
                     <h2>Recent posts</h2>
                     @foreach (var post in Enumerable.Take(Model.Posts, 5))
                     {
-                        <h3>@post.Title</h3>
+                        <h3><a href="@Model.Root/blog/@post.Url/">@post.Title</a></h3>
                         <p>@PostDate(post.Date)</p>
-                        <p>
-                            @post.Abstract <a href="@Model.Root/blog/@post.Url/">Read more</a>...
-                        </p>
+                        @post.Abstract
                     }
+                    <a href="@Model.Root/rss.xml">Subscribe</a>
                 </div>
                 @*
                     <div class="blog-post">
