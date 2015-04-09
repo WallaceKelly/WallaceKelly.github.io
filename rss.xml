@@ -5,6 +5,18 @@
     <description>Wallace Kelly writes about F#, WPF, async, ClickOnce and other software development topics.
 </description>
     <item>
+      <title>MAGE.EXE and the Certificate Store</title>
+      <guid>http://wallacekelly.github.io//blog/2015/04-08-mage-exe-and-the-certificate-store</guid>
+      <link>http://wallacekelly.github.io//blog/2015/04-08-mage-exe-and-the-certificate-store/index.html</link>
+      <pubDate>Wed, 08 Apr 2015 13:16:36 GMT</pubDate>
+      <description>&lt;p&gt;I need to sign a ClickOnce manifest using &lt;code&gt;mage.exe&lt;/code&gt;.
+The certificate is in the Windows Certificate Store.
+How do I do that?&lt;/p&gt;
+
+
+</description>
+    </item>
+    <item>
       <title>WPF ViewModel of an F# Record</title>
       <guid>http://wallacekelly.github.io//blog/2015/03-17-wpf-viewmodel-of-an-f-record</guid>
       <link>http://wallacekelly.github.io//blog/2015/03-17-wpf-viewmodel-of-an-f-record/index.html</link>
