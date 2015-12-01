@@ -22,10 +22,10 @@ Here is the F# script that I used.
 	    printfn "       where Dir is the name of the application directory"
 	    printfn "         and Cmd is either 'Add' or 'Remove'"
 	
-	match fsi.CommandLineArgs.Length with
+	match args.Length with
 	| 4 -> 
-	    let dir = fsi.CommandLineArgs.[2]
-	    let cmd = fsi.CommandLineArgs.[3]
+	    let dir = args.[2]
+	    let cmd = args.[3]
 	    printfn "%s the deploy extension to '%s'? " cmd dir
 	    match Console.ReadKey(true).Key with
 	    | ConsoleKey.Y -> 
