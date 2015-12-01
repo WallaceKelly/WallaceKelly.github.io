@@ -69,10 +69,9 @@ First, decorate the record definition to allow WPF to modify the immutable type.
 
 Define a ViewModel class which publicly exposes a copy of the record value.
 
-    type MyOptionsViewModel(opts : MyOptions) =
-        let options = opts.Clone() 
+    type MyOptionsViewModel(options : MyOptions) =
         new() = MyOptionsViewModel(MyOptions.Default)
-        member val Options = options
+        member val Options = options.Clone()
 
 The `opts` record is cloned because WPF is going to be changing the values of the record. We do not want to break the immutability assumptions that the calling code makes about the `opts` record.
 
@@ -111,14 +110,6 @@ Here is some code to test this approach.
         Console.ReadKey(false) |> ignore
         0  
 
-##Side note
+##Final note
 
-I am a bit disappointed that I could not find a better way to `Clone()` a record. Here is what I am doing:
-
-    member x.Clone() = { x with FreezePanes = x.FreezePanes }
-
-Is there a more general way to clone a record? I tried this:
-
-    member x.Clone() = unbox<MyOptions>(box x)
-
-But that does not make a copy of the record.
+Keep in mind that you may need to think about your own implementation of `Clone()`. It may need to be a deep copy, depending on what the user interface could potentially modify.
