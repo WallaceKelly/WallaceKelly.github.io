@@ -152,7 +152,7 @@
                         @foreach (var posts in Model.MonthlyPosts)
                         {
                             <li>
-                                <a href="@Model.Root/blog/archive/@posts.Item2.ToLower()-@posts.Item1.ToLower()/">@posts.Item2 @posts.Item1</a>
+                                <a href="@Model.Root/blog/archive/@posts.Item2.ToString().ToLower()-@posts.Item1.ToString().ToLower()/">@posts.Item2 @posts.Item1</a>
                             </li>
                         }
                     </ol>

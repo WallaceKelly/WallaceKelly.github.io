@@ -1,1 +1,0 @@
-xcopy /S /Y output ..\WallaceKelly.github.io\

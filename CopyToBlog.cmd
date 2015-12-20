@@ -1,0 +1,1 @@
+xcopy /S /Y output ..\blog\
