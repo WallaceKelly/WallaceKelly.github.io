@@ -1,1 +1,1 @@
-xcopy /S /Y output ..\blog\
+xcopy /S /Y output ..\published\
