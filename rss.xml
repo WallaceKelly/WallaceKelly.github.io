@@ -36,5 +36,15 @@ How do I do that?&lt;/p&gt;
 
 </description>
     </item>
+    <item>
+      <title>WPF menus that go up</title>
+      <guid>http://wallacekelly.github.io//blog/2010/02-10-wpf-menus-that-go-up</guid>
+      <link>http://wallacekelly.github.io//blog/2010/02-10-wpf-menus-that-go-up/index.html</link>
+      <pubDate>Wed, 10 Feb 2010 05:00:00 GMT</pubDate>
+      <description>&lt;p&gt;I needed a menu docked to the bottom of an application's window. Docking to the bottom of the window is no problem. However, it did not work well, because by default, WPF menus drop down. I needed it to drop up.&lt;/p&gt;
+
+
+</description>
+    </item>
   </channel>
 </rss>
