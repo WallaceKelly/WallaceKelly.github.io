@@ -445,9 +445,22 @@
  
 </summary>
 </member>
+<member name="M:FSharp.Patterns.Lines.|TrimParagraphLines|(Microsoft.FSharp.Collections.FSharpList{System.String})">
+<summary>
+ Trims all lines of the current paragraph
+</summary>
+</member>
 <member name="P:FSharp.Patterns.Lines.|TrimBlankStart|">
 <summary>
  Removes whitespace lines from the beginning of the list
+</summary>
+</member>
+<member name="M:FSharp.Patterns.Lines.|TakeCodeBlock|_|(Microsoft.FSharp.Collections.FSharpList{System.String})">
+<summary>
+ Matches when there are some lines at the beginning that are
+ either empty (or whitespace) or start with at least 4 spaces (a tab counts as 4 spaces here).
+ Returns all such lines from the beginning until a different line and
+ the number of spaces the first line started with.
 </summary>
 </member>
 <member name="M:FSharp.Patterns.Lines.|TakeStartingWithOrBlank|_|(System.String,Microsoft.FSharp.Collections.FSharpList{System.String})">
@@ -512,6 +525,11 @@
  text together with the rest.
 </summary>
 </member>
+<member name="M:FSharp.Patterns.String.|SkipSingleLine|(System.String)">
+<summary>
+ Ignores everything until a end-line character is detected, returns the remaining string.
+</summary>
+</member>
 <member name="M:FSharp.Patterns.String.|StartsWithRepeated|_|(System.String,System.String)">
 <summary>
  Matches when a string starts with a non-zero number of complete
@@ -532,6 +550,12 @@
 <summary>
  Matches when a string starts with the given value and ends 
  with a given value (and returns the rest of it)
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|StartsWithNTimesTrimIgnoreStartWhitespace|_|(System.String,System.String)">
+<summary>
+ Matches when a string starts with the specified sub-string (ignoring whitespace at the start)
+ The matched string is trimmed from all whitespace.
 </summary>
 </member>
 <member name="M:FSharp.Patterns.String.|StartsWithTrim|_|(System.String,System.String)">

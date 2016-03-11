@@ -420,11 +420,11 @@
 </member>
 <member name="M:FSharp.Markdown.Parser.|Blockquote|_|(Microsoft.FSharp.Collections.FSharpList{System.String})">
 <summary>
- Recognizes blockquote - continues taking paragraphs 
+ Recognizes blockquote - continues taking paragraphs
  starting with &apos;&gt;&apos; until there is something else
 </summary>
 </member>
-<member name="P:FSharp.Markdown.Parser.|LinesUntilBlockquoteOrWhite|">
+<member name="M:FSharp.Markdown.Parser.|LinesUntilBlockquoteEnds|(Microsoft.FSharp.Collections.FSharpList{System.String})">
 <summary>
  Continues taking lines until a whitespace line or start of a blockquote
 </summary>
@@ -437,7 +437,7 @@
 </member>
 <member name="M:FSharp.Markdown.Parser.|TakeParagraphLines|_|(Microsoft.FSharp.Collections.FSharpList{System.String})">
 <summary>
- Takes lines that belong to a continuing paragraph until 
+ Takes lines that belong to a continuing paragraph until
  a white line or start of other paragraph-item is found
 </summary>
 </member>
@@ -484,14 +484,14 @@
 </member>
 <member name="M:FSharp.Markdown.Parser.|ListItems|_|(System.Boolean,Microsoft.FSharp.Collections.FSharpList{System.String})">
 <summary>
- Recognizes a list - returns list items with information about 
+ Recognizes a list - returns list items with information about
  their indents - these need to be turned into a tree structure later.
 </summary>
 </member>
 <member name="M:FSharp.Markdown.Parser.|ListItem|_|(System.Boolean,Microsoft.FSharp.Collections.FSharpList{System.String})">
 <summary>
  Recognizes a list item until the next list item (possibly nested) or end of a list.
- The parameter specifies whether the previous line was simple (single-line not 
+ The parameter specifies whether the previous line was simple (single-line not
  separated by a white line - simple items are not wrapped in &lt;p&gt;)
 </summary>
 </member>
@@ -519,7 +519,7 @@
 </member>
 <member name="M:FSharp.Markdown.Parser.|FencedCodeBlock|_|(Microsoft.FSharp.Collections.FSharpList{System.String})">
 <summary>
- Recognizes a fenced code block - starting and ending with ```
+ Recognizes a fenced code block - starting and ending with at least ``` or ~~~
 </summary>
 </member>
 <member name="M:FSharp.Markdown.Parser.|NestedCodeBlock|_|(Microsoft.FSharp.Collections.FSharpList{System.String})">
@@ -539,7 +539,7 @@
 </member>
 <member name="M:FSharp.Markdown.Parser.parseSpans(System.String)">
 <summary>
- Parse body of a paragraph into a list of Markdown inline spans      
+ Parse body of a paragraph into a list of Markdown inline spans
 </summary>
 </member>
 <member name="M:FSharp.Markdown.Parser.parseChars(Microsoft.FSharp.Collections.FSharpList{System.Char},Microsoft.FSharp.Collections.FSharpList{System.Char})">
@@ -595,7 +595,7 @@
 </member>
 <member name="M:FSharp.Markdown.Parser.|EscapedChar|_|(Microsoft.FSharp.Collections.FSharpList{System.Char})">
 <summary>
- Succeeds when the specified character list starts with an escaped 
+ Succeeds when the specified character list starts with an escaped
  character - in that case, returns the character and the tail of the list
 </summary>
 </member>
@@ -641,9 +641,22 @@
  
 </summary>
 </member>
+<member name="M:FSharp.Patterns.Lines.|TrimParagraphLines|(Microsoft.FSharp.Collections.FSharpList{System.String})">
+<summary>
+ Trims all lines of the current paragraph
+</summary>
+</member>
 <member name="P:FSharp.Patterns.Lines.|TrimBlankStart|">
 <summary>
  Removes whitespace lines from the beginning of the list
+</summary>
+</member>
+<member name="M:FSharp.Patterns.Lines.|TakeCodeBlock|_|(Microsoft.FSharp.Collections.FSharpList{System.String})">
+<summary>
+ Matches when there are some lines at the beginning that are
+ either empty (or whitespace) or start with at least 4 spaces (a tab counts as 4 spaces here).
+ Returns all such lines from the beginning until a different line and
+ the number of spaces the first line started with.
 </summary>
 </member>
 <member name="M:FSharp.Patterns.Lines.|TakeStartingWithOrBlank|_|(System.String,Microsoft.FSharp.Collections.FSharpList{System.String})">
@@ -708,6 +721,11 @@
  text together with the rest.
 </summary>
 </member>
+<member name="M:FSharp.Patterns.String.|SkipSingleLine|(System.String)">
+<summary>
+ Ignores everything until a end-line character is detected, returns the remaining string.
+</summary>
+</member>
 <member name="M:FSharp.Patterns.String.|StartsWithRepeated|_|(System.String,System.String)">
 <summary>
  Matches when a string starts with a non-zero number of complete
@@ -728,6 +746,12 @@
 <summary>
  Matches when a string starts with the given value and ends 
  with a given value (and returns the rest of it)
+</summary>
+</member>
+<member name="M:FSharp.Patterns.String.|StartsWithNTimesTrimIgnoreStartWhitespace|_|(System.String,System.String)">
+<summary>
+ Matches when a string starts with the specified sub-string (ignoring whitespace at the start)
+ The matched string is trimmed from all whitespace.
 </summary>
 </member>
 <member name="M:FSharp.Patterns.String.|StartsWithTrim|_|(System.String,System.String)">

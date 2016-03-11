@@ -1,6 +1,7 @@
 output/
 packages/
 .paket/paket.exe
+.fake
 
 Thumbs.db
 Desktop.ini

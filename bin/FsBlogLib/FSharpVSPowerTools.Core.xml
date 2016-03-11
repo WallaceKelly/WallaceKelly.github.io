@@ -82,12 +82,6 @@
 <member name="">
 
 </member>
-<member name="P:FSharpVSPowerTools.CategorizedColumnSpan`1.Snapshot">
-<summary>
- Snapshot for which the span was created.
- None if the right Snapshot is maintained separately
-</summary>
-</member>
 <member name="">
 
 </member>
@@ -132,38 +126,6 @@
 </member>
 <member name="">
 
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="M:FSharpVSPowerTools.DepthParser.GetRanges(System.String,System.String,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Compiler.SourceCodeServices.FSharpChecker})">
-<summary>
- Get the &quot;nested ranges&quot; of source code structures, along with the minimum-number-of-indent spaces inside that span (ignoring comments and #commands).
- Note: The &apos;filename&apos; is only used e.g. to look at the filename extension (e.g. &quot;.fs&quot; versus &quot;.fsi&quot;), this does not try to load the file off disk.  
-       Instead, &apos;sourceCodeOfTheFile&apos; should contain the entire file as a giant string.
-</summary>
-</member>
-<member name="M:FSharpVSPowerTools.DepthParser.GetNonoverlappingDepthRanges(System.String,System.String,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Compiler.SourceCodeServices.FSharpChecker})">
-<summary>
- Get non-overlapping ranges, where each range spans at most a single line, and has info about its &quot;semantic depth&quot;.
- Note: The &apos;filename&apos; is only used e.g. to look at the filename extension (e.g. &quot;.fs&quot; versus &quot;.fsi&quot;), this does not try to load the file off disk.  
-       Instead, &apos;sourceCodeOfTheFile&apos; should contain the entire file as a giant string.
-</summary>
 </member>
 <member name="">
 
@@ -267,9 +229,6 @@
 <summary>
  Target framework (used to find the right version of F# binaries)
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="">
 
@@ -461,6 +420,12 @@
  Maybe computation expression builder, copied from ExtCore library
  https://github.com/jack-pappas/ExtCore/blob/master/ExtCore/Control.fs
 </summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
 </member>
 <member name="">
 
@@ -769,30 +734,53 @@
 <member name="">
 
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="M:FSharpVSPowerTools.XmlDocParser.GetXmlDocables(System.String,System.String,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Compiler.SourceCodeServices.FSharpChecker})">
-<summary>
- Get the list of Xml documentation from current source code
-</summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharpVSPowerTools.XmlDocable">
 <summary>
  Represent an Xml documentation block in source code
 </summary>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharpVSPowerTools.ArrayModule.mapPartition``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpChoice{``1,``2}},``0[])">
+ <summary>
+ Splits the collection into two (2) collections, containing the elements for which the given function returns
+ <c>Choice1Of2</c> or <c>Choice2Of2</c>, respectively.
+ </summary>
+ <param name="partitioner"></param>
+ <param name="array"></param>
+ <returns></returns>
+ <remarks>
+ This function is similar to Array.partition, but it allows the returned collections to have different types.
+ </remarks>
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharpVSPowerTools.ArrayModule.filterMap``2(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])">
+<summary>
+ Map all elements of the array that satisfy the predicate
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.ArrayModule.skipWhile``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])">
+<summary>
+ Return an array of elements that begin at the first element that failed
+ to satisfy the predicate
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.ArrayModule.takeWhile``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])">
+<summary>
+ Return an array of elements that preceded the first element that failed
+ to satisfy the predicate
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.ArrayModule.revInPlace``1(``0[])">
+<summary>
+ pass an array byref to reverse it in place
+</summary>
+</member>
+<member name="">
+
 </member>
 <member name="M:FSharpVSPowerTools.ArrayModule.distinct``1(``0[])">
 <summary>
@@ -801,14 +789,29 @@
  If an element occurs multiple times in the array then the later occurrences are discarded.
 </summary>
 </member>
-<member name="">
-
+<member name="M:FSharpVSPowerTools.ArrayModule.tryLast``1(``0[])">
+<summary>
+ Get the last element of the array or None if the Array is null or empty
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.ArrayModule.tryHead``1(``0[])">
+<summary>
+ Get the first element of the array or None if the Array is null or empty
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.ArrayModule.foldi``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{``1,``0}}},``0,``1[])">
+<summary>
+ Fold over the array passing the index and element at that index to a folding function
+</summary>
 </member>
 <member name="M:FSharpVSPowerTools.ArrayModule.heads``1(``0[])">
 <summary>
  Returns all heads of a given array.
  For [|1;2;3|] it returns [|[|1; 2; 3|]; [|1; 2|]; [|1|]|]
 </summary>
+</member>
+<member name="">
+
 </member>
 <member name="M:FSharpVSPowerTools.ArrayModule.replace``1(System.Int32,``0,``0[])">
 <summary>
@@ -823,6 +826,19 @@
 <member name="M:FSharpVSPowerTools.ArrayModule.startsWith``1(``0[],``0[])">
 <summary>
  Returns true if one array has another as its subset from index 0.
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.ArrayModule.isSubArray``1(``0[],``0[],System.Int32)">
+<summary>
+ check if subArray is found in the wholeArray starting 
+ at the provided index
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.ArrayModule.areEqual``1(``0[],``0[])">
+<summary>
+ Optimized arrays equality. ~100x faster than `array1 = array2` on strings.
+ ~2x faster for floats
+ ~0.8x slower for ints
 </summary>
 </member>
 <member name="">
@@ -1615,6 +1631,16 @@
 <member name="T:FSharpVSPowerTools.CodeGeneration.Utils">
 
 </member>
+<member name="M:FSharpVSPowerTools.DepthParser.getNonoverlappingDepthRanges(System.String,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Compiler.Ast.ParsedInput})">
+<summary>
+ Get non-overlapping ranges, where each range spans at most a single line, and has info about its &quot;semantic depth&quot;.
+ Note: The &apos;filename&apos; is only used e.g. to look at the filename extension (e.g. &quot;.fs&quot; versus &quot;.fsi&quot;), this does not try to load the file off disk.  
+       Instead, &apos;sourceCodeOfTheFile&apos; should contain the entire file as a giant string.
+</summary>
+</member>
+<member name="T:FSharpVSPowerTools.DepthParser">
+
+</member>
 <member name="">
 
 </member>
@@ -1676,6 +1702,21 @@
 
 </member>
 <member name="T:FSharpVSPowerTools.DepthParsing">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharpVSPowerTools.Dict">
 
 </member>
 <member name="">
@@ -1805,6 +1846,12 @@
 <member name="">
 
 </member>
+<member name="T:FSharpVSPowerTools.File">
+
+</member>
+<member name="">
+
+</member>
 <member name="">
 
 </member>
@@ -1877,6 +1924,17 @@
 <member name="">
 
 </member>
+<member name="M:FSharpVSPowerTools.List.foldi``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{``1,``0}}},``0,Microsoft.FSharp.Collections.FSharpList{``1})">
+<summary>
+ Fold over the list passing the index and element at that index to a folding function
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
 <member name="">
 
 </member>
@@ -1884,6 +1942,36 @@
 
 </member>
 <member name="T:FSharpVSPowerTools.List">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
 
 </member>
 <member name="">
@@ -2036,6 +2124,15 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="T:FSharpVSPowerTools.Null">
+
+</member>
+<member name="">
+
+</member>
 <member name="T:FSharpVSPowerTools.OpenDeclWithAutoOpensModule">
 
 </member>
@@ -2100,6 +2197,9 @@
 
 </member>
 <member name="T:FSharpVSPowerTools.OperatorCategorizer">
+
+</member>
+<member name="">
 
 </member>
 <member name="">
@@ -2201,6 +2301,9 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
 <member name="M:FSharpVSPowerTools.PervasiveModule.fakeDateTimeRepresentingTimeLoaded``1(``0)">
 <summary>
  Load times used to reset type checking properly on script/project load/unload. It just has to be unique for each project load/reload.
@@ -2216,7 +2319,7 @@
 <member name="">
 
 </member>
-<member name="">
+<member name="T:FSharpVSPowerTools.PervasiveModule">
 
 </member>
 <member name="">
@@ -2228,17 +2331,41 @@
 <member name="">
 
 </member>
-<member name="M:FSharpVSPowerTools.PervasiveModule.op_EqualsEqualsEquals``1(``0,``0)">
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharpVSPowerTools.Prelude.op_EqualsEqualsEquals``1(``0,``0)">
 <summary>
  LanguagePrimitives.PhysicalEquality
 </summary>
 </member>
-<member name="M:FSharpVSPowerTools.PervasiveModule.op_EqualsEquals``2(``0,``1)">
+<member name="M:FSharpVSPowerTools.Prelude.op_EqualsEquals``2(``0,``1)">
 <summary>
  obj.ReferenceEquals
 </summary>
 </member>
-<member name="T:FSharpVSPowerTools.PervasiveModule">
+<member name="T:FSharpVSPowerTools.Prelude">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharpVSPowerTools.PrintfSpecifiersUsageGetter">
 
 </member>
 <member name="">
@@ -2286,6 +2413,29 @@
 <member name="T:FSharpVSPowerTools.SourceCodeClassifier">
 
 </member>
+<member name="M:FSharpVSPowerTools.StringBuilderModule.appendLinei(System.String,System.Text.StringBuilder)">
+<summary>
+ SideEffecting function for appending a string with a &apos;\n&apos; to a stringbuilder
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.StringBuilderModule.appendi(System.String,System.Text.StringBuilder)">
+<summary>
+ SideEffecting function for appending a string to a stringbuilder
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.StringBuilderModule.appendLine(System.String,System.Text.StringBuilder)">
+<summary>
+ Pipelining function for appending a string with a &apos;\n&apos; to a stringbuilder
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.StringBuilderModule.append(System.String,System.Text.StringBuilder)">
+<summary>
+ Pipelining function for appending a string to a stringbuilder
+</summary>
+</member>
+<member name="T:FSharpVSPowerTools.StringBuilderModule">
+
+</member>
 <member name="">
 
 </member>
@@ -2304,8 +2454,17 @@
 <member name="T:FSharpVSPowerTools.StringCategorizers">
 
 </member>
-<member name="">
-
+<member name="M:FSharpVSPowerTools.StringModule.firstNonEmptyLine(System.String)">
+<summary>
+ Parse a string to find the first nonempty line
+ Return null if the string was null or only contained empty lines
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.StringModule.mapNonEmptyLines(Microsoft.FSharp.Core.FSharpFunc{System.Text.StringBuilder,Microsoft.FSharp.Core.FSharpFunc{System.String,System.Text.StringBuilder}},System.String)">
+<summary>
+ Use an accumulation function to create a new string applying a transformation
+ to every non-empty line in the string
+</summary>
 </member>
 <member name="">
 
@@ -2318,6 +2477,17 @@
 </member>
 <member name="">
 
+</member>
+<member name="M:FSharpVSPowerTools.StringModule.split(System.StringSplitOptions,System.String[],System.String)">
+<summary>
+ Splits a string into substrings based on the strings in the array separators
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.StringModule.trim(System.String)">
+<summary>
+ Remove all trailing and leading whitespace from the string
+ return null if the string is null
+</summary>
 </member>
 <member name="">
 
@@ -2431,6 +2601,9 @@
 
 </member>
 <member name="T:FSharpVSPowerTools.TaskList.Utils">
+
+</member>
+<member name="">
 
 </member>
 <member name="">
@@ -2625,7 +2798,7 @@
  Returns all string literal ranges
 </summary>
 </member>
-<member name="M:FSharpVSPowerTools.UntypedAstUtils.getQuatationRanges(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Compiler.Ast.ParsedInput})">
+<member name="M:FSharpVSPowerTools.UntypedAstUtils.getQuotationRanges(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Compiler.Ast.ParsedInput})">
 <summary>
  Returns ranges of all quotations found in an untyped AST
 </summary>
@@ -2670,12 +2843,303 @@
 <member name="">
 
 </member>
+<member name="">
+
+</member>
+<member name="T:FSharpVSPowerTools.UntypedAstUtils.Printf">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="F:FSharpVSPowerTools.UntypedAstUtils.Outlining.Scope.MatchLambda">
+<summary>
+ MatchLambda = function | expr -&gt; .... | expr -&gt;...
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="T:FSharpVSPowerTools.UntypedAstUtils.Outlining.Collapse">
+<summary>
+ Scope indicates the way a range/snapshot should be collapsed. |Scope.Scope.Same| is for a scope inside
+ some kind of scope delimiter, e.g. `[| ... |]`, `[ ... ]`, `{ ... }`, etc.  |Scope.Below| is for expressions
+ following a binding or the right hand side of a pattern, e.g. `let x = ...`
+</summary>
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="">
+
+</member>
+<member name="M:FSharpVSPowerTools.UntypedAstUtils.Outlining.Range.modBoth(Microsoft.FSharp.Compiler.Range.range,System.Int32,System.Int32)">
+<summary>
+ Produce a new range by adding modStart to the StartColumn of `r`
+ and subtracting modEnd from the EndColumn of `r`
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.UntypedAstUtils.Outlining.Range.modStart(Microsoft.FSharp.Compiler.Range.range,System.Int32)">
+<summary>
+ Create a new range from r by shifting the starting column by m
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.UntypedAstUtils.Outlining.Range.startToEnd(Microsoft.FSharp.Compiler.Range.range,Microsoft.FSharp.Compiler.Range.range)">
+<summary>
+ Create a range beginning at the start of r1 and finishing at the end of r2
+</summary>
+</member>
+<member name="M:FSharpVSPowerTools.UntypedAstUtils.Outlining.Range.endToEnd(Microsoft.FSharp.Compiler.Range.range,Microsoft.FSharp.Compiler.Range.range)">
+<summary>
+ Create a range starting at the end of r1 and finishing at the end of r2
+</summary>
+</member>
 <member name="T:FSharpVSPowerTools.UntypedAstUtils.Outlining.Range">
 
 </member>
 <member name="T:FSharpVSPowerTools.UntypedAstUtils.Outlining">
 <summary>
- Set of visitor utilies, designed for the express purpose of fetching ranges
+ Set of visitor utilities, designed for the express purpose of fetching ranges
  from an untyped AST for the purposes of outlining.
 </summary>
 </member>
@@ -2742,6 +3206,14 @@
 
 </member>
 <member name="T:FSharpVSPowerTools.XmlDocComment">
+
+</member>
+<member name="M:FSharpVSPowerTools.XmlDocParser.getXmlDocables(System.String,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Compiler.Ast.ParsedInput})">
+<summary>
+ Get the list of Xml documentation from current source code
+</summary>
+</member>
+<member name="T:FSharpVSPowerTools.XmlDocParser">
 
 </member>
 <member name="">
