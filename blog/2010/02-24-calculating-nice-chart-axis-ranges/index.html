@@ -52,17 +52,30 @@
             <div class="col-sm-8 blog-main">
 
                 
-<h1>WPF menus that go up</h1>
+<h1>Calculating nice chart axis ranges</h1>
 
-<p>I needed a menu docked to the bottom of an application's window. Docking to the bottom of the window is no problem. However, it did not work well, because by default, WPF menus drop down. I needed it to drop up.</p>
+<p>I was working on a project that required calculating nice ranges for chart axes. I found a useful discussion <a href="http://stackoverflow.com/questions/611878/reasonable-optimized-chart-scaling">here</a>.</p>
 
-<!--more-->
+<p>Here is what I used in C# and so far it is working adequately:</p>
 
-<p>I need behavior like the Windows Start menu when it is docked on the bottom of the Windows workspace. I looked for a <code>PopupDirection</code> or some such property -- no luck.</p>
-
-<p>I found a solution.</p>
-
-<p>Using Blender, edit a copy of a menu's <code>ItemContainerStyle</code>. The default style has two <code>Popup</code> elements with a <code>Placement</code> property. <code>Placement = "Top"</code> is a valid option.</p>
+<table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
+<span class="l">2: </span>
+<span class="l">3: </span>
+<span class="l">4: </span>
+<span class="l">5: </span>
+<span class="l">6: </span>
+<span class="l">7: </span>
+</pre></td>
+<td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="i">var</span> <span class="i">numGridLines</span> <span class="o">=</span> <span class="n">5</span>;
+<span class="i">var</span> <span class="i">magnitude</span> <span class="o">=</span> <span class="i">Math</span><span class="o">.</span><span class="i">Floor</span>(<span class="i">Math</span><span class="o">.</span><span class="i">Log10</span>((<span class="i">maxValue</span> <span class="o">-</span> <span class="i">minValue</span>) <span class="o">*</span> <span class="n">1.1</span>));
+<span class="i">var</span> <span class="i">basis</span> <span class="o">=</span> <span class="i">Math</span><span class="o">.</span><span class="i">Pow</span>(<span class="n">10</span>, (<span class="i">magnitude</span> <span class="o">-</span> <span class="n">1</span>));
+<span class="i">var</span> <span class="i">margin</span> <span class="o">=</span> (<span class="i">maxValue</span> <span class="o">-</span> <span class="i">minValue</span>) <span class="o">*</span> <span class="n">0.1</span>;
+<span class="i">var</span> <span class="i">axisMax</span> <span class="o">=</span> <span class="i">Math</span><span class="o">.</span><span class="i">Ceiling</span>((<span class="i">maxValue</span> <span class="o">+</span> <span class="i">margin</span>) <span class="o">/</span> <span class="i">basis</span>) <span class="o">*</span> <span class="i">basis</span>;
+<span class="i">var</span> <span class="i">axisMin</span> <span class="o">=</span> <span class="i">Math</span><span class="o">.</span><span class="i">Floor</span>((<span class="i">minValue</span> <span class="o">-</span> <span class="i">margin</span>) <span class="o">/</span> <span class="n">1.1</span> <span class="o">/</span> <span class="i">basis</span>) <span class="o">*</span> <span class="i">basis</span>;
+<span class="i">var</span> <span class="i">majorGrid</span> <span class="o">=</span> <span class="i">Math</span><span class="o">.</span><span class="i">Floor</span>((<span class="i">axisMax</span> <span class="o">-</span> <span class="i">axisMin</span>) <span class="o">/</span> <span class="i">basis</span> <span class="o">/</span> <span class="i">numGridLines</span>) <span class="o">*</span> <span class="i">basis</span>;
+</code></pre></td>
+</tr>
+</table>
 
 
 
