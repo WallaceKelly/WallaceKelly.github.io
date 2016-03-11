@@ -41,7 +41,9 @@ How do I do that?&lt;/p&gt;
       <guid>http://wallacekelly.github.io//blog/2010/02-24-calculating-nice-chart-axis-ranges</guid>
       <link>http://wallacekelly.github.io//blog/2010/02-24-calculating-nice-chart-axis-ranges/index.html</link>
       <pubDate>Wed, 24 Feb 2010 05:00:00 GMT</pubDate>
-      <description>
+      <description>&lt;p&gt;I was working on a project that required calculating nice ranges for chart axes. I found a useful discussion &lt;a href="http://stackoverflow.com/questions/611878/reasonable-optimized-chart-scaling"&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Here is what I used in C# and so far it is working adequately.&lt;/p&gt;
+
 
 </description>
     </item>

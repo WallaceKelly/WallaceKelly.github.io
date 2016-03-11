@@ -57,15 +57,10 @@
 <p>I need to sign a ClickOnce manifest using <code>mage.exe</code>.
 The certificate is in the Windows Certificate Store.
 How do I do that?</p>
-
 <!--more-->
-
 <p>There are two things you need to know.</p>
-
 <p>First, use mage.exe's <code>-CertHash</code> parameter instead of the <code>-CertFile</code> parameter.</p>
-
 <p>Second, locate the certificate's hash.</p>
-
 <ul>
 <li>Open the <code>certmgr.msc</code> management console.</li>
 <li>Locate the certificate of interest.</li>
@@ -74,16 +69,13 @@ How do I do that?</p>
 <li>Scroll down to the Thumbprint field and select it.</li>
 <li>Copy the Thumbprint onto the Windows clipboard.</li>
 </ul>
-
 <p>Now, you can run <code>mage.exe</code> like this:</p>
-
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
 </pre></td>
 <td class="snippet"><pre class="fssnip highlighted"><code lang="fsharp"><span class="i">mage</span><span class="o">.</span><span class="i">exe</span> <span class="o">-</span><span class="i">Sign</span> <span class="i">MyApp</span><span class="o">.</span><span class="i">application</span> <span class="o">-</span><span class="i">ch</span> <span class="s">&quot;e9 30 16 99 ed ...&quot;</span>
 </code></pre></td>
 </tr>
 </table>
-
 <p><img src="CertificateThumbprint.png" alt="" /></p>
 
 

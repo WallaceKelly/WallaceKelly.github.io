@@ -55,13 +55,9 @@
 <h1>WPF menus that go up</h1>
 
 <p>I needed a menu docked to the bottom of an application's window. Docking to the bottom of the window is no problem. However, it did not work well, because by default, WPF menus drop down. I needed it to drop up.</p>
-
 <!--more-->
-
 <p>I need behavior like the Windows Start menu when it is docked on the bottom of the Windows workspace. I looked for a <code>PopupDirection</code> or some such property -- no luck.</p>
-
 <p>I found a solution.</p>
-
 <p>Using Blender, edit a copy of a menu's <code>ItemContainerStyle</code>. The default style has two <code>Popup</code> elements with a <code>Placement</code> property. <code>Placement = "Top"</code> is a valid option.</p>
 
 

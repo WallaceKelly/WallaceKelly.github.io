@@ -55,13 +55,9 @@
 <h1>WPF ViewModel of an F# Record</h1>
 
 <p>How does one expose an F# record in a WPF view model? My F# code uses immutable records. But, I need to bind those records to a WPF user interface in a view model. What is the right way to do that?</p>
-
 <!--more-->
-
 <h2>Background</h2>
-
 <p>I have an F# record that looks something like this:</p>
-
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
 <span class="l">2: </span>
 <span class="l">3: </span>
@@ -72,11 +68,8 @@
 </code></pre></td>
 </tr>
 </table>
-
 <p>I want to bind this to an WPF user interface with two check boxes.</p>
-
 <p>I <strong>do not want</strong> my view model to look like this:</p>
-
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
 <span class="l"> 2: </span>
 <span class="l"> 3: </span>
@@ -116,14 +109,14 @@
             <span class="k">if</span> <span onmouseout="hideTip(event, 'fs14', 22)" onmouseover="showTip(event, 'fs14', 22)" class="i">v</span> <span class="o">&lt;&gt;</span> <span onmouseout="hideTip(event, 'fs9', 23)" onmouseover="showTip(event, 'fs9', 23)" class="v">freezePanes</span> <span class="k">then</span>
                 <span onmouseout="hideTip(event, 'fs9', 24)" onmouseover="showTip(event, 'fs9', 24)" class="v">freezePanes</span> <span class="o">&lt;-</span> <span onmouseout="hideTip(event, 'fs14', 25)" onmouseover="showTip(event, 'fs14', 25)" class="i">v</span>
                 <span onmouseout="hideTip(event, 'fs7', 26)" onmouseover="showTip(event, 'fs7', 26)" class="i">propertyChangedEvent</span><span class="o">.</span><span class="i">Trigger</span>(<span onmouseout="hideTip(event, 'fs11', 27)" onmouseover="showTip(event, 'fs11', 27)" class="i">x</span>, <span class="i">PropertyChangedEventArgs</span>(<span class="s">&quot;FreezePanes&quot;</span>))
-
+            
     <span class="k">member</span> <span onmouseout="hideTip(event, 'fs11', 28)" onmouseover="showTip(event, 'fs11', 28)" class="i">x</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs15', 29)" onmouseover="showTip(event, 'fs15', 29)" class="i">ShowHeaders</span>
         <span class="k">with</span> <span class="i">get</span>() <span class="o">=</span> <span onmouseout="hideTip(event, 'fs10', 30)" onmouseover="showTip(event, 'fs10', 30)" class="v">showHeaders</span>
         <span class="k">and</span> <span onmouseout="hideTip(event, 'fs13', 31)" onmouseover="showTip(event, 'fs13', 31)" class="i">set</span>(<span onmouseout="hideTip(event, 'fs14', 32)" onmouseover="showTip(event, 'fs14', 32)" class="i">v</span>) <span class="o">=</span> 
             <span class="k">if</span> <span onmouseout="hideTip(event, 'fs14', 33)" onmouseover="showTip(event, 'fs14', 33)" class="i">v</span> <span class="o">&lt;&gt;</span> <span onmouseout="hideTip(event, 'fs10', 34)" onmouseover="showTip(event, 'fs10', 34)" class="v">showHeaders</span> <span class="k">then</span>
                 <span onmouseout="hideTip(event, 'fs10', 35)" onmouseover="showTip(event, 'fs10', 35)" class="v">showHeaders</span> <span class="o">&lt;-</span> <span onmouseout="hideTip(event, 'fs14', 36)" onmouseover="showTip(event, 'fs14', 36)" class="i">v</span>
                 <span onmouseout="hideTip(event, 'fs7', 37)" onmouseover="showTip(event, 'fs7', 37)" class="i">propertyChangedEvent</span><span class="o">.</span><span class="i">Trigger</span>(<span onmouseout="hideTip(event, 'fs11', 38)" onmouseover="showTip(event, 'fs11', 38)" class="i">x</span>, <span class="i">PropertyChangedEventArgs</span>(<span class="s">&quot;ShowHeaders&quot;</span>))
-
+            
     <span class="k">interface</span> <span class="i">INotifyPropertyChanged</span> <span class="k">with</span>
         [&lt;<span onmouseout="hideTip(event, 'fs16', 39)" onmouseover="showTip(event, 'fs16', 39)" class="t">CLIEvent</span>&gt;]
         <span class="k">member</span> <span onmouseout="hideTip(event, 'fs11', 40)" onmouseover="showTip(event, 'fs11', 40)" class="i">x</span><span class="o">.</span><span onmouseout="hideTip(event, 'fs17', 41)" onmouseover="showTip(event, 'fs17', 41)" class="f">PropertyChanged</span> <span class="o">:</span> <span onmouseout="hideTip(event, 'fs18', 42)" onmouseover="showTip(event, 'fs18', 42)" class="t">IEvent</span><span class="o">&lt;</span><span class="i">PropertyChangedEventHandler</span>, <span class="i">PropertyChangedEventArgs</span><span class="o">&gt;</span> <span class="o">=</span> 
@@ -131,15 +124,10 @@
 </code></pre></td>
 </tr>
 </table>
-
 <p>That is too much code! And in my real project, my record has a dozen members.</p>
-
 <h2>Proposed Solution</h2>
-
 <p>Instead, bind directly to a copy of the record.</p>
-
 <p>First, decorate the record definition to allow WPF to modify the immutable type. That's the purpose of the <code>[&lt;CLIMutable&gt;]</code> attribute. Also add <code>Default</code> and <code>Clone()</code> members to the record. The reason for these two members becomes apparent in the next step.</p>
-
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
 <span class="l"> 2: </span>
 <span class="l"> 3: </span>
@@ -164,9 +152,7 @@
 </code></pre></td>
 </tr>
 </table>
-
 <p>Define a ViewModel class which publicly exposes a copy of the record value.</p>
-
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l">1: </span>
 <span class="l">2: </span>
 <span class="l">3: </span>
@@ -177,13 +163,9 @@
 </code></pre></td>
 </tr>
 </table>
-
 <p>The <code>opts</code> record is cloned because WPF is going to be changing the values of the record. We do not want to break the immutability assumptions that the calling code makes about the <code>opts</code> record.</p>
-
 <h2>Sample Usage</h2>
-
 <p>Here is some code to test this approach.</p>
-
 <table class="pre"><tr><td class="lines"><pre class="fssnip"><span class="l"> 1: </span>
 <span class="l"> 2: </span>
 <span class="l"> 3: </span>
@@ -233,7 +215,7 @@
 [&lt;<span onmouseout="hideTip(event, 'fs24', 60)" onmouseover="showTip(event, 'fs24', 60)" class="t">EntryPoint</span>; <span class="i">STAThread</span>&gt;]
 <span class="k">let</span> <span onmouseout="hideTip(event, 'fs25', 61)" onmouseover="showTip(event, 'fs25', 61)" class="f">main</span> <span onmouseout="hideTip(event, 'fs26', 62)" onmouseover="showTip(event, 'fs26', 62)" class="i">argv</span> <span class="o">=</span> 
     <span class="k">let</span> <span onmouseout="hideTip(event, 'fs27', 63)" onmouseover="showTip(event, 'fs27', 63)" class="i">win</span> <span class="o">=</span> <span class="i">XamlReader</span><span class="o">.</span><span class="i">Parse</span>(<span onmouseout="hideTip(event, 'fs23', 64)" onmouseover="showTip(event, 'fs23', 64)" class="i">winXaml</span>) <span class="o">:?&gt;</span> <span class="i">Window</span>
-
+    
     <span class="k">let</span> <span onmouseout="hideTip(event, 'fs22', 65)" onmouseover="showTip(event, 'fs22', 65)" class="i">options</span> <span class="o">=</span> 
         { <span class="i">FreezePanes</span> <span class="o">=</span> <span class="k">true</span>
           <span class="i">ShowHeaders</span> <span class="o">=</span> <span class="k">true</span> }
@@ -248,9 +230,7 @@
 </code></pre></td>
 </tr>
 </table>
-
 <h2>Final note</h2>
-
 <p>Keep in mind that you may need to think about your own implementation of <code>Clone()</code>. It may need to be a deep copy, depending on what the user interface could potentially modify.</p>
 
 <div class="tip" id="fs1">type MyOptions =<br />&#160;&#160;{FreezePanes: bool;<br />&#160;&#160;&#160;ShowHeaders: bool;}<br /><br />Full name: wpfviewmodelofanfrecord.MyOptions</div>
