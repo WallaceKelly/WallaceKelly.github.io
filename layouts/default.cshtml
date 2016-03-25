@@ -12,7 +12,7 @@
     <meta name="author" content="">
     <link rel="icon" href="@Model.Root/favicon.png">
 
-    <title>Wallace Kelly writes about F#, WPF, async, and the like</title>
+    <title>Wallace Kelly</title>
 
     <!-- FSharp.Formatting Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="@Model.Root/fsharp.formatting/tooltips.css" />
@@ -36,11 +36,11 @@
     <div class="blog-masthead">
         <div class="container">
             <nav class="blog-nav">
-                <a class="blog-nav-item active" href="#">Home</a>
-                <a class="blog-nav-item" href="#">New features</a>
+                <a class="blog-nav-item active" href="@Model.Root/index.html">Home</a>
+                @*<a class="blog-nav-item" href="#">New features</a>
                 <a class="blog-nav-item" href="#">Press</a>
                 <a class="blog-nav-item" href="#">New hires</a>
-                <a class="blog-nav-item" href="#">About</a>
+                <a class="blog-nav-item" href="#">About</a>*@
             </nav>
         </div>
     </div>
@@ -58,19 +58,20 @@
 
                 @RenderBody()
 
-                <br />
-                <br />
-                <br />
                 <div class="blog-post">
-                    <h2>Recent posts</h2>
                     @foreach (var post in Enumerable.Take(Model.Posts, 5))
                     {
-                        <h3>@post.Title</h3>
-                        <p>@PostDate(post.Date)</p>
-                        <p>
-                            @post.Abstract <a href="@Model.Root/blog/@post.Url/">Read more</a>...
-                        </p>
+                        <h3><a href="@Model.Root/blog/@post.Url/index.html">@post.Title</a></h3>
+                        <div class="blog-abstract">
+                            @post.Abstract
+                            <a href="@Model.Root/blog/@post.Url/index.html">Read more</a>...
+                            <br/>
+                            <br/>
+                        </div>
                     }
+                    <div>
+                    <a href="@Model.Root/rss.xml">Subscribe</a>
+                    </div>
                 </div>
                 @*
                     <div class="blog-post">
@@ -144,17 +145,36 @@
             <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
                 <div class="sidebar-module sidebar-module-inset">
                     <h4>About</h4>
-                    <p>Wallace Kelly writes F# code. He lives and works in North Carolina. He is available for software development and training opportunties. Contact him at wally@bluerockresearch.com.</p>
+                    <p>
+                        <img width="100" src="/wally2.jpg" />
+                    </p>
+                    <p>
+                        Wallace Kelly writes F# code. He lives and works in North Carolina. He is available for software development and training opportunties. Contact him at wally@bluerockresearch.com.
+                    </p>
                 </div>
                 <div class="sidebar-module">
                     <h4>Archives</h4>
                     <ol class="list-unstyled">
+
                         @foreach (var posts in Model.MonthlyPosts)
                         {
                             <li>
-                                <a href="@Model.Root/blog/archive/@posts.Item2.ToString().ToLower()-@posts.Item1.ToString().ToLower()/">@posts.Item2 @posts.Item1</a>
+                                <a href="@Model.Root/blog/archive/@posts.Item2.ToString().ToLower()-@posts.Item1.ToString().ToLower()/index.html">@posts.Item2 @posts.Item1</a>
                             </li>
                         }
+
+                        @*<li><a href="#">March 2014</a></li>
+                            <li><a href="#">February 2014</a></li>
+                            <li><a href="#">January 2014</a></li>
+                            <li><a href="#">December 2013</a></li>
+                            <li><a href="#">November 2013</a></li>
+                            <li><a href="#">October 2013</a></li>
+                            <li><a href="#">September 2013</a></li>
+                            <li><a href="#">August 2013</a></li>
+                            <li><a href="#">July 2013</a></li>
+                            <li><a href="#">June 2013</a></li>
+                            <li><a href="#">May 2013</a></li>
+                            <li><a href="#">April 2013</a></li>*@
                     </ol>
                 </div>
                 <div class="sidebar-module">
@@ -163,6 +183,7 @@
                         <li><a href="https://github.com/wallacekelly">GitHub</a></li>
                         <li><a href="http://stackoverflow.com/users/167920/wally">StackOverflow</a></li>
                         <li><a href="https://plus.google.com/u/0/+WallaceKellyPhD/posts">Google+</a></li>
+                        <li><a href="https://twitter.com/WallaceKelly">Twitter</a></li>
                     </ol>
                 </div>
             </div><!-- /.blog-sidebar -->

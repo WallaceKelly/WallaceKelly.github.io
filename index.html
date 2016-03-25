@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="http://wallacekelly.github.io//favicon.png">
+    <link rel="icon" href="http://localhost:8080/favicon.png">
 
-    <title>Wallace Kelly writes about F#, WPF, async, and the like</title>
+    <title>Wallace Kelly</title>
 
     <!-- FSharp.Formatting Styles -->
-    <link rel="stylesheet" type="text/css" media="screen" href="http://wallacekelly.github.io//fsharp.formatting/tooltips.css" />
-    <script type="text/javascript" src="http://wallacekelly.github.io//fsharp.formatting/tooltips.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="http://localhost:8080/fsharp.formatting/tooltips.css" />
+    <script type="text/javascript" src="http://localhost:8080/fsharp.formatting/tooltips.js"></script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
     <!-- Bootstrap CSS -->
-    <link href="http://wallacekelly.github.io//stylesheets/bootstrap.min.css" rel="stylesheet">
-    <link href="http://wallacekelly.github.io//stylesheets/bootstrap-blog.css" rel="stylesheet">
+    <link href="http://localhost:8080/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="http://localhost:8080/stylesheets/bootstrap-blog.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -31,11 +31,8 @@
     <div class="blog-masthead">
         <div class="container">
             <nav class="blog-nav">
-                <a class="blog-nav-item active" href="#">Home</a>
-                <a class="blog-nav-item" href="#">New features</a>
-                <a class="blog-nav-item" href="#">Press</a>
-                <a class="blog-nav-item" href="#">New hires</a>
-                <a class="blog-nav-item" href="#">About</a>
+                <a class="blog-nav-item active" href="http://localhost:8080/index.html">Home</a>
+                
             </nav>
         </div>
     </div>
@@ -53,60 +50,63 @@
 
                 
 
-
-                <br />
-                <br />
-                <br />
                 <div class="blog-post">
-                    <h2>Recent posts</h2>
-                        <h3>MAGE.EXE and the Certificate Store</h3>
-                        <p>    <time datetime=" 2015-16-08t09:16:36" pubdate data-updated="true">Apr 8, 2015</time>
-</p>
-                        <p>
+                        <h3><a href="http://localhost:8080/blog/2015/04-08-mage-exe-and-the-certificate-store/index.html">MAGE.EXE and the Certificate Store</a></h3>
+                        <div class="blog-abstract">
                             <p>I need to sign a ClickOnce manifest using <code>mage.exe</code>.
 The certificate is in the Windows Certificate Store.
 How do I do that?</p>
 
 
- <a href="http://wallacekelly.github.io//blog/2015/04-08-mage-exe-and-the-certificate-store/">Read more</a>...
-                        </p>
-                        <h3>WPF ViewModel of an F# Record</h3>
-                        <p>    <time datetime=" 2015-36-17t03:36:57" pubdate data-updated="true">Mar 17, 2015</time>
-</p>
-                        <p>
+
+                            <a href="http://localhost:8080/blog/2015/04-08-mage-exe-and-the-certificate-store/index.html">Read more</a>...
+                            <br/>
+                            <br/>
+                        </div>
+                        <h3><a href="http://localhost:8080/blog/2015/03-17-wpf-viewmodel-of-an-f-record/index.html">WPF ViewModel of an F# Record</a></h3>
+                        <div class="blog-abstract">
                             <p>How does one expose an F# record in a WPF view model? My F# code uses immutable records. But, I need to bind those records to a WPF user interface in a view model. What is the right way to do that?</p>
 
 
- <a href="http://wallacekelly.github.io//blog/2015/03-17-wpf-viewmodel-of-an-f-record/">Read more</a>...
-                        </p>
-                        <h3>Script for adding and removing the ClickOnce .deploy extension</h3>
-                        <p>    <time datetime=" 2015-50-14t10:50:12" pubdate data-updated="true">Mar 14, 2015</time>
-</p>
-                        <p>
+
+                            <a href="http://localhost:8080/blog/2015/03-17-wpf-viewmodel-of-an-f-record/index.html">Read more</a>...
+                            <br/>
+                            <br/>
+                        </div>
+                        <h3><a href="http://localhost:8080/blog/2015/03-14-script-for-adding-and-removing-the-clickonce-deploy-extension/index.html">Script for adding and removing the ClickOnce .deploy extension</a></h3>
+                        <div class="blog-abstract">
                             <p>I was recently debugging a ClickOnce deployment. I needed a way to quickly add and remove the <code>*.deploy</code> extension from all the files in a deployment folder. Well, not <em>all</em> the files. The <code>*.manifest</code> file is treated differently.</p>
 
 
- <a href="http://wallacekelly.github.io//blog/2015/03-14-script-for-adding-and-removing-the-clickonce-deploy-extension/">Read more</a>...
-                        </p>
-                        <h3>Calculating nice chart axis ranges</h3>
-                        <p>    <time datetime=" 2010-00-24t12:00:00" pubdate data-updated="true">Feb 24, 2010</time>
-</p>
-                        <p>
+
+                            <a href="http://localhost:8080/blog/2015/03-14-script-for-adding-and-removing-the-clickonce-deploy-extension/index.html">Read more</a>...
+                            <br/>
+                            <br/>
+                        </div>
+                        <h3><a href="http://localhost:8080/blog/2010/02-24-calculating-nice-chart-axis-ranges/index.html">Calculating nice chart axis ranges</a></h3>
+                        <div class="blog-abstract">
                             <p>I was working on a project that required calculating nice ranges for chart axes. I found a useful discussion <a href="http://stackoverflow.com/questions/611878/reasonable-optimized-chart-scaling">here</a>.</p>
 <p>Here is what I used in C# and so far it is working adequately.</p>
 
 
- <a href="http://wallacekelly.github.io//blog/2010/02-24-calculating-nice-chart-axis-ranges/">Read more</a>...
-                        </p>
-                        <h3>WPF menus that go up</h3>
-                        <p>    <time datetime=" 2010-00-10t12:00:00" pubdate data-updated="true">Feb 10, 2010</time>
-</p>
-                        <p>
+
+                            <a href="http://localhost:8080/blog/2010/02-24-calculating-nice-chart-axis-ranges/index.html">Read more</a>...
+                            <br/>
+                            <br/>
+                        </div>
+                        <h3><a href="http://localhost:8080/blog/2010/02-10-wpf-menus-that-go-up/index.html">WPF menus that go up</a></h3>
+                        <div class="blog-abstract">
                             <p>I needed a menu docked to the bottom of an application's window. Docking to the bottom of the window is no problem. However, it did not work well, because by default, WPF menus drop down. I needed it to drop up.</p>
 
 
- <a href="http://wallacekelly.github.io//blog/2010/02-10-wpf-menus-that-go-up/">Read more</a>...
-                        </p>
+
+                            <a href="http://localhost:8080/blog/2010/02-10-wpf-menus-that-go-up/index.html">Read more</a>...
+                            <br/>
+                            <br/>
+                        </div>
+                    <div>
+                    <a href="http://localhost:8080/rss.xml">Subscribe</a>
+                    </div>
                 </div>
                 
             </div><!-- /.blog-main -->
@@ -114,20 +114,28 @@ How do I do that?</p>
             <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
                 <div class="sidebar-module sidebar-module-inset">
                     <h4>About</h4>
-                    <p>Wallace Kelly writes F# code. He lives and works in North Carolina. He is available for software development and training opportunties. Contact him at wally@bluerockresearch.com.</p>
+                    <p>
+                        <img width="100" src="/wally2.jpg" />
+                    </p>
+                    <p>
+                        Wallace Kelly writes F# code. He lives and works in North Carolina. He is available for software development and training opportunties. Contact him at wally@bluerockresearch.com.
+                    </p>
                 </div>
                 <div class="sidebar-module">
                     <h4>Archives</h4>
                     <ol class="list-unstyled">
+
                             <li>
-                                <a href="http://wallacekelly.github.io//blog/archive/april-2015/">April 2015</a>
+                                <a href="http://localhost:8080/blog/archive/april-2015/index.html">April 2015</a>
                             </li>
                             <li>
-                                <a href="http://wallacekelly.github.io//blog/archive/march-2015/">March 2015</a>
+                                <a href="http://localhost:8080/blog/archive/march-2015/index.html">March 2015</a>
                             </li>
                             <li>
-                                <a href="http://wallacekelly.github.io//blog/archive/february-2010/">February 2010</a>
+                                <a href="http://localhost:8080/blog/archive/february-2010/index.html">February 2010</a>
                             </li>
+
+                        
                     </ol>
                 </div>
                 <div class="sidebar-module">
@@ -136,6 +144,7 @@ How do I do that?</p>
                         <li><a href="https://github.com/wallacekelly">GitHub</a></li>
                         <li><a href="http://stackoverflow.com/users/167920/wally">StackOverflow</a></li>
                         <li><a href="https://plus.google.com/u/0/+WallaceKellyPhD/posts">Google+</a></li>
+                        <li><a href="https://twitter.com/WallaceKelly">Twitter</a></li>
                     </ol>
                 </div>
             </div><!-- /.blog-sidebar -->
@@ -156,9 +165,9 @@ How do I do that?</p>
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="http://wallacekelly.github.io//javascripts/bootstrap.min.js"></script>
-    <script src="http://wallacekelly.github.io//javascripts/boostratp-docs.min.js"></script>
+    <script src="http://localhost:8080/javascripts/bootstrap.min.js"></script>
+    <script src="http://localhost:8080/javascripts/boostratp-docs.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://wallacekelly.github.io//javascripts/bootstrap-ie10-viewport-bug-workaround.js"></script>
+    <script src="http://localhost:8080/javascripts/bootstrap-ie10-viewport-bug-workaround.js"></script>
 </body>
 </html>
