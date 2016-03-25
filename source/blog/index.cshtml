@@ -1,11 +1,16 @@
 @{
     Layout = "default";
     Title = "Wallace Kelly";
-    Description = "Wallace Kelly writes about F#, WPF, async, and the like.";
+    Description = "writes about F#, WPF, async, and the like.";
 }
 @using System.Linq
 
-@foreach (var post in Enumerable.Take(Model.Posts, 10))
-{
-    <a href="@Model.Root/blog/@post.Url/index.html">@post.Title</a>
-}
+<ul>
+    @foreach (var post in Enumerable.Take(Model.Posts, 10))
+    {
+        <li>
+            <a href="/blog/@post.Url/index.html">@post.Title</a>
+        </li>
+    }
+</ul>
+<br />

@@ -7,9 +7,7 @@
 }
 
 I was recently debugging a ClickOnce deployment. I needed a way to quickly add and remove the `*.deploy` extension from all the files in a deployment folder. Well, not *all* the files. The `*.manifest` file is treated differently.
-
 <!--more-->
-
 Here is the F# script that I used.
 
 	open System
