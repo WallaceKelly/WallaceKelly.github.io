@@ -22,273 +22,15 @@
  Allow checker results where the source doesn&apos;t even match
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="P:FSharpVSPowerTools.FSharpCompilerVersion.LatestKnown">
 <summary>
  The current requested language version can be overridden by the user using environment variable.
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharpVSPowerTools.FSharpTargetFramework">
 <summary>
  Target framework (used to find the right version of F# binaries)
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.LanguageService.ParseAndCheckFileInProject(Microsoft.FSharp.Compiler.SourceCodeServices.FSharpProjectOptions,System.String,System.String,FSharpVSPowerTools.AllowStaleResults)">
 <summary>
@@ -296,35 +38,20 @@
  returns the results of checking the file.
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.LanguageService.IsSymbolUsedInProjects(Microsoft.FSharp.Compiler.SourceCodeServices.FSharpSymbol,System.String,System.Collections.Generic.IEnumerable{Microsoft.FSharp.Compiler.SourceCodeServices.FSharpProjectOptions},FSharpVSPowerTools.Profiler)">
 <summary>
  Get all the uses in the project of a symbol in the given file (using &apos;source&apos; as the source for the file)
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.LanguageService.GetUsesOfSymbolInProjectAtLocationInFile(Microsoft.FSharp.Compiler.SourceCodeServices.FSharpProjectOptions,System.Collections.Generic.IEnumerable{Microsoft.FSharp.Compiler.SourceCodeServices.FSharpProjectOptions},System.String,System.String,System.Int32,System.Int32,System.String,System.String[],Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Core.FSharpFunc{System.Int32,System.Int64}}},Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.Unit}}}})">
 <summary>
  Get all the uses in the project of a symbol in the given file (using &apos;source&apos; as the source for the file)
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.LanguageService.GetUsesOfSymbolAtLocationInFile(Microsoft.FSharp.Compiler.SourceCodeServices.FSharpProjectOptions,System.String,System.String,System.Int32,System.Int32,System.String,System.String[],FSharpVSPowerTools.AllowStaleResults,Microsoft.FSharp.Core.FSharpFunc{System.String,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Core.FSharpFunc{System.Int32,System.Int64}}})">
 <summary>
  Get all the uses of a symbol in the given file (using &apos;source&apos; as the source for the file)
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.LanguageService.GetScriptCheckerOptions(System.String,System.String,System.String,FSharpVSPowerTools.FSharpCompilerVersion)">
 <summary>
@@ -336,84 +63,15 @@
  Constructs options for the interactive checker for a project under the given configuration. 
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.LanguageService.GetCheckerOptions(System.String,System.String,System.String,System.String[],System.String[],System.Tuple{System.String,Microsoft.FSharp.Compiler.SourceCodeServices.FSharpProjectOptions}[],FSharpVSPowerTools.FSharpCompilerVersion)">
 <summary>
  Constructs options for the interactive checker for the given file in the project under the given configuration.
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharpVSPowerTools.LanguageService">
 <summary>
  Provides functionality for working with the F# interactive checker running in background
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharpVSPowerTools.MaybeBuilder">
 <summary>
@@ -421,180 +79,12 @@
  https://github.com/jack-pappas/ExtCore/blob/master/ExtCore/Control.fs
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharpVSPowerTools.ParseAndCheckResults">
 <summary>
  Wraps the result of type-checking and provides methods for implementing
  various IntelliSense functions (such as completion &amp; tool tips). Provides default
  empty/negative results if information is missing.
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="P:FSharpVSPowerTools.RawEntity.CleanedIdents">
 <summary>
@@ -608,139 +98,10 @@
  Full entity name as it&apos;s seen in compiled code (raw FSharpEntity.FullName, FSharpValueOrFunction.FullName). 
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharpVSPowerTools.XmlDocable">
 <summary>
  Represent an Xml documentation block in source code
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.ArrayModule.mapPartition``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpChoice{``1,``2}},``0[])">
  <summary>
@@ -753,9 +114,6 @@
  <remarks>
  This function is similar to Array.partition, but it allows the returned collections to have different types.
  </remarks>
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.ArrayModule.filterMap``2(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])">
 <summary>
@@ -778,9 +136,6 @@
 <summary>
  pass an array byref to reverse it in place
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.ArrayModule.distinct``1(``0[])">
 <summary>
@@ -810,9 +165,6 @@
  For [|1;2;3|] it returns [|[|1; 2; 3|]; [|1; 2|]; [|1|]|]
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.ArrayModule.replace``1(System.Int32,``0,``0[])">
 <summary>
  Returns a new array with an element replaced with a given value.
@@ -841,63 +193,6 @@
  ~0.8x slower for ints
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.ArrayModule">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.AssemblyContentProvider">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.AsyncMaybeModule">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.AsyncModule.Map``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Control.FSharpAsync{``0})">
 <summary>
  Transforms an Async value using the specified function.
@@ -907,12 +202,6 @@
 <summary>
  Async implementation of List.map.
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.AsyncModule.List">
-
 </member>
 <member name="M:FSharpVSPowerTools.AsyncModule.Array.exists``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Control.FSharpAsync{System.Boolean}},``0[])">
 <summary>
@@ -929,94 +218,10 @@
  Async implementation of Array.map.
 </summary>
 </member>
-<member name="T:FSharpVSPowerTools.AsyncModule.Array">
-
-</member>
-<member name="T:FSharpVSPowerTools.AsyncModule">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="T:FSharpVSPowerTools.CodeGeneration.InterfaceData">
 <summary>
  Capture information about an interface in ASTs
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="P:FSharpVSPowerTools.CodeGeneration.InterfaceStubGenerator.Context.DisplayContext">
 <summary>
@@ -1048,12 +253,6 @@
  Map generic types to specific instances for specialized interface implementation
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.CodeGeneration.InterfaceStubGenerator.tryFindInterfaceDeclaration(Microsoft.FSharp.Compiler.Range.pos,Microsoft.FSharp.Compiler.Ast.ParsedInput)">
 <summary>
  Find corresponding interface declaration at a given position
@@ -1078,21 +277,12 @@
   (3) If any symbol found, capture its member signature 
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.CodeGeneration.InterfaceStubGenerator.getMemberNameAndRanges(FSharpVSPowerTools.CodeGeneration.InterfaceData)">
 <summary>
  Get associated member names and ranges
  In case of properties, intrinsic ranges might not be correct for the purpose of getting
  positions of &apos;member&apos;, which indicate the indentation for generating new members
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.CodeGeneration.InterfaceStubGenerator.hasNoInterfaceMember(Microsoft.FSharp.Compiler.SourceCodeServices.FSharpEntity)">
 <summary>
@@ -1109,87 +299,15 @@
  Filter out duplicated interfaces in inheritance chain
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.CodeGeneration.InterfaceStubGenerator.normalizePropertyName(Microsoft.FSharp.Compiler.SourceCodeServices.FSharpMemberOrFunctionOrValue)">
 <summary>
  Convert a getter/setter to its canonical form
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.CodeGeneration.InterfaceStubGenerator">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="P:FSharpVSPowerTools.CodeGeneration.RecordStubGenerator.Context.FieldDefaultValue">
 <summary>
  A single-line skeleton for each field
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharpVSPowerTools.CodeGeneration.RecordStubGenerator.PositionKind.AfterLastField">
 <summary>
@@ -1206,206 +324,20 @@
  let record = {&lt;insert-here&gt;}
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.CodeGeneration.RecordStubGenerator">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="P:FSharpVSPowerTools.CodeGeneration.SignatureGenerator.Context.ResolvingOpenDeclarations">
 <summary>
  Relevant open declarations that needs resolving
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="P:FSharpVSPowerTools.CodeGeneration.SignatureGenerator.Context.OpenDeclWriter">
 <summary>
  A temporary writer to store resolved open declarations
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.CodeGeneration.SignatureGenerator.getFileNameFromSymbol(Microsoft.FSharp.Compiler.SourceCodeServices.FSharpSymbol)">
 <summary>
  Get file name from symbol&apos;s full name and escape illegal characters
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.CodeGeneration.SignatureGenerator.writeTypeHeader(FSharpVSPowerTools.CodeGeneration.SignatureGenerator.Context,Microsoft.FSharp.Compiler.SourceCodeServices.FSharpEntity)">
 <summary>
@@ -1413,53 +345,11 @@
  It supposes to be called after all internal details have been written.
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.CodeGeneration.SignatureGenerator.writeModuleHeader(FSharpVSPowerTools.CodeGeneration.SignatureGenerator.Context,Microsoft.FSharp.Compiler.SourceCodeServices.FSharpEntity)">
 <summary>
  Write open declarations, XmlDoc and attributes of modules to a separate buffer.
  It supposes to be called after all internal details have been written.
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.CodeGeneration.SignatureGenerator.formatType(FSharpVSPowerTools.CodeGeneration.SignatureGenerator.Context,Microsoft.FSharp.Compiler.SourceCodeServices.FSharpType)">
 <summary>
@@ -1468,46 +358,10 @@
   &apos;Dictionary&lt;&apos;TKey,&apos;TValue&gt;.Enumerator&apos; is formatted as &apos;Dictionary`2.Enumerator&lt;&apos;TKey,&apos;TValue&gt;&apos;
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.CodeGeneration.SignatureGenerator">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="P:FSharpVSPowerTools.CodeGeneration.UnionPatternMatchCaseGenerator.Context.CaseDefaultValue">
 <summary>
  A single-line skeleton for each case
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="P:FSharpVSPowerTools.CodeGeneration.UnionPatternMatchCaseGenerator.PatternMatchExpr.Expr">
 <summary>
@@ -1519,117 +373,15 @@
  Range of &apos;match x with&apos; or &apos;function&apos;
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.CodeGeneration.UnionPatternMatchCaseGenerator">
-
-</member>
 <member name="T:FSharpVSPowerTools.CodeGeneration.Utils.NamesWithIndices">
 <summary>
  Represent environment where a captured identifier should be renamed
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.CodeGeneration.Utils.normalizeArgName(Microsoft.FSharp.Collections.FSharpMap{System.String,Microsoft.FSharp.Collections.FSharpSet{System.Int32}},System.String)">
 <summary>
  Rename a given argument if the identifier has been used
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.CodeGeneration.Utils">
-
 </member>
 <member name="M:FSharpVSPowerTools.DepthParser.getNonoverlappingDepthRanges(System.String,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Compiler.Ast.ParsedInput})">
 <summary>
@@ -1638,106 +390,10 @@
        Instead, &apos;sourceCodeOfTheFile&apos; should contain the entire file as a giant string.
 </summary>
 </member>
-<member name="T:FSharpVSPowerTools.DepthParser">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.DepthParsing">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.Dict">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.EntityModule">
-
-</member>
 <member name="P:FSharpVSPowerTools.Environment.runningOnMono">
 <summary>
  Are we running on the Mono platform?
 </summary>
-</member>
-<member name="T:FSharpVSPowerTools.Environment">
-
 </member>
 <member name="M:FSharpVSPowerTools.FSharpEnvironment.resolveAssembly(Microsoft.FSharp.Collections.FSharpList{System.String},System.String)">
 <summary>
@@ -1749,137 +405,20 @@
  Returns default directories to be used when searching for DLL files
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.FSharpEnvironment.tryFsharpiScript(System.String)">
 <summary>
  Try to find the F# compiler location by looking at the &quot;fsharpi&quot; script installed by F# packages
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.FSharpEnvironment.Option.ofString(System.String)">
 <summary>
  Convert string into Option string where null and String.Empty result in None
 </summary>
 </member>
-<member name="T:FSharpVSPowerTools.FSharpEnvironment.Option">
-
-</member>
-<member name="T:FSharpVSPowerTools.FSharpEnvironment">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.File">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.IdentifierUtils.encapsulateIdentifier(FSharpVSPowerTools.SymbolKind,System.String)">
 <summary>
  Encapsulates identifiers for rename operations if needed
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.IdentifierUtils">
-
 </member>
 <member name="M:FSharpVSPowerTools.InsertContextModule.insertOpenDeclaration``1(``0,FSharpVSPowerTools.IInsertContextDocument{``0},FSharpVSPowerTools.InsertContext,System.String)">
  <summary>
@@ -1896,314 +435,20 @@
  Corrects insertion line number based on kind of scope and text surrounding the insertion point.
 </summary>
 </member>
-<member name="T:FSharpVSPowerTools.InsertContextModule">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.Lexer.tokenizeLine``2(``0,System.String[],``1,System.String,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Collections.FSharpList{System.String},Microsoft.FSharp.Core.FSharpFunc{``1,System.Int64}}})">
 <summary>
  Return all tokens of current line
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.Lexer.getLexStates(Microsoft.FSharp.Collections.FSharpList{System.String},System.String)">
 <summary>
  Get the array of all lex states in current source
 </summary>
 </member>
-<member name="T:FSharpVSPowerTools.Lexer">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.List.foldi``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{``1,``0}}},``0,Microsoft.FSharp.Collections.FSharpList{``1})">
 <summary>
  Fold over the list passing the index and element at that index to a folding function
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.List">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.Navigation.Index">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.Navigation.NavigableItemsCollector">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.Null">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.OpenDeclWithAutoOpensModule">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.OpenDeclarationGetter">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.OpenDeclarationModule">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.OperatorCategorizer">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.OptionModule.flatten``1(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpOption{``0}})">
 <summary>
@@ -2230,112 +475,16 @@
  Gets the value associated with the option or the supplied default value.
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.OptionModule">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.ParsedInput">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.PervasiveModule.op_LessDivideGreater(System.String,System.String)">
 <summary>
  Path.Combine
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.PervasiveModule.fakeDateTimeRepresentingTimeLoaded``1(``0)">
 <summary>
  Load times used to reset type checking properly on script/project load/unload. It just has to be unique for each project load/reload.
  Not yet sure if this works for scripts.
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.PervasiveModule">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.Prelude.op_EqualsEqualsEquals``1(``0,``0)">
 <summary>
@@ -2346,72 +495,6 @@
 <summary>
  obj.ReferenceEquals
 </summary>
-</member>
-<member name="T:FSharpVSPowerTools.Prelude">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.PrintfSpecifiersUsageGetter">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.QuotationCategorizer">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.Reflection">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.SeqModule">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.SourceCodeClassifier">
-
 </member>
 <member name="M:FSharpVSPowerTools.StringBuilderModule.appendLinei(System.String,System.Text.StringBuilder)">
 <summary>
@@ -2433,27 +516,6 @@
  Pipelining function for appending a string to a stringbuilder
 </summary>
 </member>
-<member name="T:FSharpVSPowerTools.StringBuilderModule">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.StringCategorizers.EscapedChars">
-
-</member>
-<member name="T:FSharpVSPowerTools.StringCategorizers">
-
-</member>
 <member name="M:FSharpVSPowerTools.StringModule.firstNonEmptyLine(System.String)">
 <summary>
  Parse a string to find the first nonempty line
@@ -2466,18 +528,6 @@
  to every non-empty line in the string
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.StringModule.split(System.StringSplitOptions,System.String[],System.String)">
 <summary>
  Splits a string into substrings based on the strings in the array separators
@@ -2489,159 +539,6 @@
  return null if the string is null
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.StringModule">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.TaskList.CommentExtractor">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.TaskList.Utils">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.TypedAstExtensionHelpers">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.TypedAstPatterns.|Constructor|_|(Microsoft.FSharp.Compiler.SourceCodeServices.FSharpMemberOrFunctionOrValue)">
 <summary>
  Constructor (enclosingEntity)
@@ -2652,141 +549,15 @@
  Func (memberFunctionOrValue, fullType)
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.TypedAstPatterns.|Entity|_|(Microsoft.FSharp.Compiler.SourceCodeServices.FSharpSymbol)">
 <summary>
  Entity (originalEntity, abbreviatedEntity, abbreviatedType)
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.TypedAstPatterns.|Field|_|(Microsoft.FSharp.Compiler.SourceCodeServices.FSharpSymbol)">
 <summary>
  Field (field, fieldAbbreviatedType)
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.TypedAstPatterns">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.TypedAstUtils">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.UntypedAstUtils.getModuleOrNamespacePath(Microsoft.FSharp.Compiler.Range.pos,Microsoft.FSharp.Compiler.Ast.ParsedInput)">
 <summary>
@@ -2803,254 +574,20 @@
  Returns ranges of all quotations found in an untyped AST
 </summary>
 </member>
-<member name="">
-
-</member>
 <member name="M:FSharpVSPowerTools.UntypedAstUtils.getLongIdents(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Compiler.Ast.ParsedInput})">
 <summary>
  Returns all Idents and LongIdents found in an untyped AST.
 </summary>
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.UntypedAstUtils.|Sequentials|_|(Microsoft.FSharp.Compiler.Ast.SynExpr)">
 <summary>
  An recursive pattern that collect all sequential expressions to avoid StackOverflowException
 </summary>
 </member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.UntypedAstUtils.Printf">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
 <member name="F:FSharpVSPowerTools.UntypedAstUtils.Outlining.Scope.MatchLambda">
 <summary>
  MatchLambda = function | expr -&gt; .... | expr -&gt;...
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="T:FSharpVSPowerTools.UntypedAstUtils.Outlining.Collapse">
 <summary>
@@ -3058,60 +595,6 @@
  some kind of scope delimiter, e.g. `[| ... |]`, `[ ... ]`, `{ ... }`, etc.  |Scope.Below| is for expressions
  following a binding or the right hand side of a pattern, e.g. `let x = ...`
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.UntypedAstUtils.Outlining.Range.modBoth(Microsoft.FSharp.Compiler.Range.range,System.Int32,System.Int32)">
 <summary>
@@ -3134,38 +617,11 @@
  Create a range starting at the end of r1 and finishing at the end of r2
 </summary>
 </member>
-<member name="T:FSharpVSPowerTools.UntypedAstUtils.Outlining.Range">
-
-</member>
 <member name="T:FSharpVSPowerTools.UntypedAstUtils.Outlining">
 <summary>
  Set of visitor utilities, designed for the express purpose of fetching ranges
  from an untyped AST for the purposes of outlining.
 </summary>
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
 </member>
 <member name="M:FSharpVSPowerTools.UntypedAstUtils.HashDirectiveInfo.getHashLoadDirectiveResolvedPathAtPosition(Microsoft.FSharp.Compiler.Range.pos,Microsoft.FSharp.Compiler.Ast.ParsedInput)">
 <summary>
@@ -3178,61 +634,10 @@
  based on #I and #load directives
 </summary>
 </member>
-<member name="T:FSharpVSPowerTools.UntypedAstUtils.HashDirectiveInfo">
-
-</member>
-<member name="T:FSharpVSPowerTools.UntypedAstUtils">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.UnusedDeclarations">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.XmlDocComment">
-
-</member>
 <member name="M:FSharpVSPowerTools.XmlDocParser.getXmlDocables(System.String,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Compiler.Ast.ParsedInput})">
 <summary>
  Get the list of Xml documentation from current source code
 </summary>
-</member>
-<member name="T:FSharpVSPowerTools.XmlDocParser">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:FSharpVSPowerTools.XmlDocParsing">
-
-</member>
-<member name="">
-
-</member>
-<member name="T:System.AssemblyVersionInformation">
-
 </member>
 </members>
 </doc>

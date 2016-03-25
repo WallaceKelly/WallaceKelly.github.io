@@ -12,7 +12,11 @@
  Creates a forwarder Textwriter, which forwards all output to the given function.
  Set revertRedirect only to &quot;false&quot; if you know that f doesn&apos;t print anything to the stdout.
  When revertRedirect is true we capture the Console.Out property and set it before calling f.
- RemoveNewLines
+ removeNewLines handles the newline characters properly and calls f for every new line instead of every call to
+ to the underlaying writers.
+ The difference is that with removeNewLines you should use printfn and get lines without newline characters.
+ On the other hand without removeNewLines you are called on every TextWriter.Write call,
+ so you might be called multiple times for a single lines or a single time for multiple lines.
 </summary>
 </member>
 <member name="M:Yaaf.FSharp.Scripting.ScriptHost.Create(Yaaf.FSharp.Scripting.FsiOptions,Microsoft.FSharp.Core.FSharpOption{System.Object},Microsoft.FSharp.Core.FSharpOption{System.Boolean},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.IO.TextWriter},Microsoft.FSharp.Core.FSharpOption{System.Boolean})">
@@ -35,6 +39,11 @@
 <member name="T:Yaaf.FSharp.Scripting.FsiOptions">
 <summary>
  See https://msdn.microsoft.com/en-us/library/dd233172.aspx
+</summary>
+</member>
+<member name="P:Yaaf.FSharp.Scripting.IFsiSession.DynamicAssembly">
+<summary>
+ Gets the currently build dynamic assembly.
 </summary>
 </member>
 <member name="M:Yaaf.FSharp.Scripting.IFsiSession.TryEvalExpressionWithOutput(System.String)">
