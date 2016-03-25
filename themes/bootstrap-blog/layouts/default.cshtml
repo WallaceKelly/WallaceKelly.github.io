@@ -65,7 +65,7 @@
                     <h2>Recent posts</h2>
                     @foreach (var post in Enumerable.Take(Model.Posts, 5))
                     {
-                        <h3><a href="@Model.Root/blog/@post.Url/">@post.Title</a></h3>
+                        <h3><a href="@Model.Root/blog/@post.Url/index.html">@post.Title</a></h3>
                         <p>@PostDate(post.Date)</p>
                         @post.Abstract
                     }

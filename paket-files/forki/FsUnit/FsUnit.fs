@@ -50,3 +50,14 @@ module Extensions =
     let shouldContainText (x : string) (y : string) = 
         if y.Contains(x) |> not then
             failwithf "\"%s\" is not a substring of \"%s\"" x y
+
+    [<DebuggerStepThrough>]
+    let shouldNotContainText (x : string) (y : string) = 
+        if y.Contains(x) then
+            failwithf "\"%s\" is a substring of \"%s\"" x y
+
+    [<DebuggerStepThrough>]
+    let shouldHaveLength expected list =
+        let actual = Seq.length list
+        if actual <> expected then
+            failwithf "Invalid length in %A\r\nExpected: %i\r\nActual: %i" list expected actual

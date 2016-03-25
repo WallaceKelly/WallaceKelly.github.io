@@ -6,6 +6,7 @@ url: http://wallacekelly.github.io/
 gitlocation: https://github.com/WallaceKelly/WallaceKelly.github.io.git
 gitbranch: gh-pages
 title: Wallace Kelly Blog
+subtitle: F#, WPF, async, ClickOnce, etc.
 description: >
     Wallace Kelly writes about F#, WPF, async, ClickOnce and
     other software development topics.

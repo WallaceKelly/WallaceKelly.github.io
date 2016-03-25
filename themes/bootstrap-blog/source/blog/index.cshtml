@@ -7,5 +7,7 @@
 
 @foreach (var post in Enumerable.Take(Model.Posts, 10))
 {
+  <div>
     <a href="blog/@post.Url/index.html">@post.Title</a>
+  </div>
 }
