@@ -1,13 +1,13 @@
 <rss version="2.0">
   <channel>
     <title>Wallace Kelly Blog</title>
-    <link>http://localhost:8080</link>
+    <link>http://wallacekelly.github.io/</link>
     <description>Wallace Kelly writes about F#, WPF, async, ClickOnce and other software development topics.
 </description>
     <item>
       <title>MAGE.EXE and the Certificate Store</title>
-      <guid>http://localhost:8080/blog/2015/04-08-mage-exe-and-the-certificate-store</guid>
-      <link>http://localhost:8080/blog/2015/04-08-mage-exe-and-the-certificate-store/index.html</link>
+      <guid>http://wallacekelly.github.io//blog/2015/04-08-mage-exe-and-the-certificate-store</guid>
+      <link>http://wallacekelly.github.io//blog/2015/04-08-mage-exe-and-the-certificate-store/index.html</link>
       <pubDate>Wed, 08 Apr 2015 13:16:36 GMT</pubDate>
       <description>&lt;p&gt;I need to sign a ClickOnce manifest using &lt;code&gt;mage.exe&lt;/code&gt;.
 The certificate is in the Windows Certificate Store.
@@ -18,8 +18,8 @@ How do I do that?&lt;/p&gt;
     </item>
     <item>
       <title>WPF ViewModel of an F# Record</title>
-      <guid>http://localhost:8080/blog/2015/03-17-wpf-viewmodel-of-an-f-record</guid>
-      <link>http://localhost:8080/blog/2015/03-17-wpf-viewmodel-of-an-f-record/index.html</link>
+      <guid>http://wallacekelly.github.io//blog/2015/03-17-wpf-viewmodel-of-an-f-record</guid>
+      <link>http://wallacekelly.github.io//blog/2015/03-17-wpf-viewmodel-of-an-f-record/index.html</link>
       <pubDate>Tue, 17 Mar 2015 07:36:57 GMT</pubDate>
       <description>&lt;p&gt;How does one expose an F# record in a WPF view model? My F# code uses immutable records. But, I need to bind those records to a WPF user interface in a view model. What is the right way to do that?&lt;/p&gt;
 
@@ -28,8 +28,8 @@ How do I do that?&lt;/p&gt;
     </item>
     <item>
       <title>Script for adding and removing the ClickOnce .deploy extension</title>
-      <guid>http://localhost:8080/blog/2015/03-14-script-for-adding-and-removing-the-clickonce-deploy-extension</guid>
-      <link>http://localhost:8080/blog/2015/03-14-script-for-adding-and-removing-the-clickonce-deploy-extension/index.html</link>
+      <guid>http://wallacekelly.github.io//blog/2015/03-14-script-for-adding-and-removing-the-clickonce-deploy-extension</guid>
+      <link>http://wallacekelly.github.io//blog/2015/03-14-script-for-adding-and-removing-the-clickonce-deploy-extension/index.html</link>
       <pubDate>Sat, 14 Mar 2015 14:50:12 GMT</pubDate>
       <description>&lt;p&gt;I was recently debugging a ClickOnce deployment. I needed a way to quickly add and remove the &lt;code&gt;*.deploy&lt;/code&gt; extension from all the files in a deployment folder. Well, not &lt;em&gt;all&lt;/em&gt; the files. The &lt;code&gt;*.manifest&lt;/code&gt; file is treated differently.&lt;/p&gt;
 
@@ -38,8 +38,8 @@ How do I do that?&lt;/p&gt;
     </item>
     <item>
       <title>Calculating nice chart axis ranges</title>
-      <guid>http://localhost:8080/blog/2010/02-24-calculating-nice-chart-axis-ranges</guid>
-      <link>http://localhost:8080/blog/2010/02-24-calculating-nice-chart-axis-ranges/index.html</link>
+      <guid>http://wallacekelly.github.io//blog/2010/02-24-calculating-nice-chart-axis-ranges</guid>
+      <link>http://wallacekelly.github.io//blog/2010/02-24-calculating-nice-chart-axis-ranges/index.html</link>
       <pubDate>Wed, 24 Feb 2010 05:00:00 GMT</pubDate>
       <description>&lt;p&gt;I was working on a project that required calculating nice ranges for chart axes. I found a useful discussion &lt;a href="http://stackoverflow.com/questions/611878/reasonable-optimized-chart-scaling"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Here is what I used in C# and so far it is working adequately.&lt;/p&gt;
@@ -49,8 +49,8 @@ How do I do that?&lt;/p&gt;
     </item>
     <item>
       <title>WPF menus that go up</title>
-      <guid>http://localhost:8080/blog/2010/02-10-wpf-menus-that-go-up</guid>
-      <link>http://localhost:8080/blog/2010/02-10-wpf-menus-that-go-up/index.html</link>
+      <guid>http://wallacekelly.github.io//blog/2010/02-10-wpf-menus-that-go-up</guid>
+      <link>http://wallacekelly.github.io//blog/2010/02-10-wpf-menus-that-go-up/index.html</link>
       <pubDate>Wed, 10 Feb 2010 05:00:00 GMT</pubDate>
       <description>&lt;p&gt;I needed a menu docked to the bottom of an application's window. Docking to the bottom of the window is no problem. However, it did not work well, because by default, WPF menus drop down. I needed it to drop up.&lt;/p&gt;
 
